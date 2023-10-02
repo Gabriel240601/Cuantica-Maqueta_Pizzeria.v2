@@ -1,0 +1,408 @@
+/** estos son los colores generales **/
+:root{
+    --main-c:#FF6915;
+    --black-c:#000;
+
+}
+/** aqui tan los estilos generales **/
+html{
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: inherit;
+}
+
+li{
+    list-style: none;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+h1{
+    font-size: 2.4rem;
+}
+h2{
+    font-size: 2.2rem;
+}
+h3{
+    font-size: 2rem;
+}
+h4{
+    font-size: 1.8rem;
+}
+h5{
+    font-size: 1.6rem;
+}
+h6{
+    font-size: 1.4rem;
+}
+
+/* aqui veo los botones */
+.cta-main {
+    background-color: var(--main-c);
+    padding: 1rem 1rem;
+    color: #fff;
+    font-size: bold;
+    border-radius: 2px;
+}
+/** aqui vere el header de la pizzeria **/
+
+header.main-header{
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: white;
+    z-index: 999;
+}
+
+.wrap-logo-header{
+    display: flex;
+    align-items: center;
+    flex-basis: 15%;
+}
+
+.logo-header{
+    font-weight: bold;
+    font-size: 0.75rem;
+    color: #000;
+}
+
+/* aqui vere el style de menu header */
+
+.nav-header{
+    display: flex;
+        align-items: center;
+            width: 100%;
+
+}
+
+.nav-wrap-header{
+    display: flex;
+        flex-basis: 50%;
+}
+
+ul.main-menu{
+    display: flex;
+    width: 100%;
+    z-index: 99;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1;
+    background-color: #fff;
+}
+
+ul.main-menu #nav-main-login{ 
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    background-color: coral;
+}
+
+li.menu-item{
+    margin: .75rem;
+    display: flex;
+   
+    
+}   
+
+li.menu-item a{
+    padding: .5rem 1rem;
+    color: black;
+
+}
+
+li.menu-item a:hover{
+    color: var(--main-c);
+}
+
+i.toogle-menu {
+  display:block; 
+    background-color: white;
+    border: none;
+    z-index: 9999;
+
+}
+.toogle-menu {
+    display:block; 
+      background-color: white;
+      border: none;
+      z-index: 9999;
+  }
+
+input#check{
+  display:none; 
+}
+/* codigo para minimizar y se coloque
+en blanco el menu principal */
+
+@media  (min-width:880px){
+    .header-wrap{
+        padding: .5rem 5rem;
+    }
+}
+
+@media  (min-width:768px){
+    a.logo-header{
+        font-weight: bold;
+        color: black;
+    }
+}
+
+@media (max-width:768px){
+    header.main-header{
+        margin-bottom: 4rem  ;
+    }
+    .header-wrap{
+        position: fixed;
+        width: 100%;
+        background-color: #fff;
+        padding: 0;
+        top: 0;
+        z-index: 9999;
+        height: 60px;
+    }
+    .wrap-logo-header{
+        position: fixed;
+        z-index: 999;
+        top: 3%;
+        left: 3%;
+    }
+    .logo-header, li.menu-item a{
+        color: #222; 
+    }
+    i.toggle-menu{
+        display: flex;
+        
+    }
+    ul.main-menu, #nav-main-login{
+       display: none;
+       left: 0;
+       margin: 0;
+       padding: 0; 
+    }
+    ul.main-menu{
+        position: fixed;
+        background-color: #fff;
+    
+    }
+    /* aqui viene el codigo para seleccionar 
+    el icono de menu y se expanda */
+
+    label.checkbtn{
+        position: fixed;
+        right: 3%;
+        top: 3%;
+        z-index: 9999;
+        cursor: pointer;   
+    }
+    #check:checked ~ ul{
+        display: flex;
+        z-index: 9;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        top: 0;
+        font-size: 2rem;
+    }
+}
+ 
+/* Aqui sigue el diseño de inicio de reserva */
+
+
+.wrap-header-hero{
+    background: linear-gradient(to bottom, rgb(0 0 0 / 
+    .75), rgb(0 0 0 / .5)), 
+    url(img/pizza.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hero-home-page{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrap-hero-home-page{
+    color: #fff;
+    text-align: center;
+    width: 50%;
+
+}
+.wrap-hero-home-page p{
+   margin-bottom: 2rem;
+
+}
+
+@media (max-width: 768px){
+    .wrap-hero-home-page{
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+  /* Estilos para los cuadros de A domicilio y Recojo en tienda */
+  .opcion-box {
+
+    display: inline-block;
+    width: 45%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    cursor: pointer;
+    margin: 5px;    
+    background-color:var(--main-c);
+    text-align: center;
+    border-radius:  2px;
+}
+
+
+.datos-box {
+    display: none;
+    margin-top: 20px;
+}
+
+.mostrar-datos-box .datos-box {
+    display: block;
+}
+
+
+.datos-box input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #FF6915;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilos para el checkbox "Utilizar mi ubicación actual" */
+.datos-box label[for="ubicacion-actual"] {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.datos-box input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Estilos para el botón "Quiero hacer mi pedido Ya" */
+.datos-box button {
+    background-color: #FF6915;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.datos-box button:hover {
+    background-color: #FF5722;
+}
+
+/*  aqui viene el codigo de la tarjeta uno */
+
+.section{
+    max-width: 1200px;
+    margin: 8rem auto;
+    padding: 1rem;
+  }
+  
+  .column-4{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+  
+  .tarjeta-rest{
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+  }
+  .wrap-text_tarjeta-rest{
+    color: #fff;
+    padding: .5rem;
+    border-radius: 6px;
+    background:linear-gradient(to top, rgb(0 0 0 / .5), rgb(0 0 0 / .5));
+  }
+  
+  .wrap-text_tarjeta-rest p{
+    color: #f2f2f2;
+  }
+  .cta-wrap_tarjeta-rest{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .precio_tarjeta-rest span{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .cta_tarjeta-rest{
+    background-color: var(--main-c);
+    padding: .25rem 1rem;
+    border-radius: 4px;
+  }
+  .cta_tarjeta-rest a{
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  @media (max-width:1200px){
+    .column-4{
+      grid-template-columns: repeat(3,1fr);
+    }
+  }
+  
+  @media (max-width:880px){
+    .column-4{
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+  
+  @media (max-width:640px){
+    .column-4{
+      grid-template-columns: repeat(1,1fr);
+    }
+  } 
+/*imagen responsive*/
+.responsive-img {
+    max-width: 70px;
+    max-height: 100%;
+    height: auto;
+     
+}
+.wrap-nav-header{
+    width: 80%; /* Establece el ancho deseado para el contenedor */
+    margin-left: auto;
+    margin-right: auto;
+}

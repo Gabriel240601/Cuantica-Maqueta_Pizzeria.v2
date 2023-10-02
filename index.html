@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="logica.js"></script>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poller+One&display=swap">
+</head>
+
+<body>
+    <div class="wrap-header-hero">
+        <header class="main-header">
+            <div class="header-wrap">
+                <div class="wrap-logo-header">
+                    <a class="logo-header" href="/">
+
+                    </a>
+                </div>
+            </div>
+
+            <div class="wrap-nav-header">
+                <nav class="nav-header">
+                    <input type="checkbox" id="check">
+                    <div class="image-container">
+                        <label for="check" class="checkbtn">
+                            <i class="toogle-menu">
+                                <img src="img/logo.png" class="responsive-img">
+                            </i>
+                        </label>
+                    </div>
+                    <ul class="main-menu">
+                        <li class="menu-item"><a href="">Nosotros</a></li>
+                        <li class="menu-item"><a href="">gabriel</a></li>
+                        <li class="menu-item"><a href="">Pide tu Pizza</a></li>
+                        <li class="menu-item"><a href="">Ofertas</a></li>
+                        <li class="menu-item"><a href="">Carata</a></li>
+                        <li class="menu-item"><a href="">Contacto</a></li>
+                        <li id="nav-main-login" class="menu-item"><a href="">Entrar</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main-section">
+            <!--inicio de reserva-->
+            <section class="hero-home-page">
+                <div class="wrap-hero-home-page">
+                    <h1>HOY TOCA PIZZA</h1>
+                    <P>
+                        Disfruta de auténticas pizzas caseras
+                        con los mejores ingredientes en nuestra
+                        pizzería
+                    </P>
+                    <a href="" class="cta-main">Reserva
+                        Ya</a>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <div class="opcion-box" onclick="mostrarDatosBox('domicilio')">A domicilio</div>
+    <div class="opcion-box" onclick="mostrarDatosBox('recojo')">Recojo en tienda</div>
+
+    <div class="datos-box" id="datos-domicilio">
+        <input type="text" placeholder="Ingrese la calle">
+        <label for="ubicacion-actual">Utilizar mi ubicación actual:</label>
+        <input type="checkbox" id="ubicacion-actual">
+        <button onclick="hacerPedido('domicilio')">Quiero hacer mi pedido Ya</button>
+    </div>
+
+    <div class="datos-box" id="datos-recojo">
+        <input type="text" placeholder="Lugar y calle de la tienda">
+        <button onclick="hacerPedido('recojo')">Quiero hacer mi pedido Ya</button>
+    </div>
+
+    <!-- Tarjetas de comida -->
+    <section class="wrap section">
+        <div class="wrap-title-section">
+            <h2>Ofertas con Sabor a Pizza</h2>
+        </div>
+        <div class="column-4 columns">
+
+            <div class="wrap-text_tarjeta-rest">
+                <h3>¡Todos los días!</h3>
+                <p>D e s c u b r e l a</p>
+                <div style="background:url(img/adorno.jpg)center;background-size: cover;" class="tarjeta-rest">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+    <footer class="footer">
+
+    </footer>
+
+</body>
+
+</html>
