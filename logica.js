@@ -1,26 +1,28 @@
+const header = document.querySelector("header");
 
-        // Función para mostrar los datos al hacer clic en A domicilio o Recojo en tienda
-        function mostrarDatosBox(opcion) {
-            const datosDomicilio = document.getElementById('datos-domicilio');
-            const datosRecojo = document.getElementById('datos-recojo');
+window.addEventListener("scroll", function(){
+	header.classList.toggle("sticky", window.scrollY > 0);
 
-            if (opcion === 'domicilio') {
-                datosDomicilio.style.display = 'block';
-                datosRecojo.style.display = 'none';
-            } else if (opcion === 'recojo') {
-                datosRecojo.style.display = 'block';
-                datosDomicilio.style.display = 'none';
-            }
-        }
+})
 
-        // Función para realizar un pedido al hacer clic en "Quiero hacer mi pedido Ya"
-        function hacerPedido(opcion) {
-            if (opcion === 'domicilio') {
-                // Lógica para hacer un pedido a domicilio
-                alert('Pedido a domicilio realizado.');
-            } else if (opcion === 'recojo') {
-                // Lógica para hacer un pedido para recojo en tienda
-                alert('Pedido para recojo en tienda realizado.');
-            }
-        }
-    
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () => {
+	menu.classList.toggle('bx-x');
+	navbar.classList.toggle('open');
+}
+
+window.onscroll = () => {
+	menu.classList.remove('bx-x');
+	navbar.classList.remove('open');
+}
+
+const sr = ScrollReveal ({
+	distance: '30px', 
+	duration: 2500,
+	reset: true
+})
+sr.reveal('.home-text',{delay:200, origin:'left'});
+sr.reveal('.home-img',{delay:200, origin:'right'});
+sr.reveal('.container, .about, .menu, .contact',{delay:200, origin:'bottom'});
