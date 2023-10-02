@@ -39,6 +39,21 @@ header{
 	font-weight: 700;
 	color: var(--text-color);
 }
+.boton {
+	
+	padding: 10px 20px; /* Ajusta el relleno según tus preferencias */
+	background-color: #ffA500; /* Color naranja */
+	color: #fff; /* Color del texto del botón */
+	text-decoration: none; /* Elimina el subrayado del enlace */
+	border: none; /* Elimina el borde del botón */
+	border-radius: 5px; /* Añade esquinas redondeadas */
+	cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  }
+  
+  /* Estilos para el botón al pasar el cursor (opcional) */
+  .boton:hover {
+	background-color: white; /* Cambia el color de fondo al pasar el cursor */
+  }
 span{
 	color: var(--main-color);
 }
