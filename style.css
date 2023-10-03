@@ -173,8 +173,9 @@ header.sticky{
 	transition: all .40s ease;
 }
 .container-text p{
-	font-size: var(--p-font);
-	font-weight: 500;
+	
+	font-weight: 500;	
+	justify-content: center;
 }
 .c-mainbox:hover{
 	transform: translateX(7px);
