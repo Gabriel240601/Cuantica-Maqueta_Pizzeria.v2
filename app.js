@@ -114,3 +114,11 @@ const limpiarHtml = (contenedor) =>{
         contenedor.removeChild(contenedor.firstChild);
     }
 }
+////////////////////////7777
+        // Reemplaza 'TU_API_KEY' con tu propia clave de API de Google Maps
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: 40.7128, lng: -74.0060 }, // Coordenadas del centro del mapa
+                zoom: 14, // Nivel de zoom
+            });
+        }
