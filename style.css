@@ -162,7 +162,7 @@ span {
 	color: var(--main-color);
 }
 
-.h-icons {
+.icono {
 	display: flex;
 	align-items: center;
 	padding: 10px 22px;
@@ -170,7 +170,7 @@ span {
 	border-radius: 5rem;
 }
 
-.h-icons i {
+.icono i {
 	font-size: 22px;
 	color: var(--bg-color);
 	margin-right: 15px;
@@ -546,4 +546,39 @@ header.sticky {
 	.container {
 		margin-top: 150px;
 	}
+}
+
+.icono {
+ position: relative;
+}
+.icono #listacarrito{
+	display: none;
+}
+
+.icono:hover #listacarrito{
+	display: block;
+	position: absolute;
+	right: 0;	
+	backdrop-filter: blur(10px);
+	top: 100%;
+	z-index: 1;
+	background-color: #4E4B5076;
+	padding: 20px;
+	min-width: 400px;
+}
+table {
+	width: 100%;
+}
+
+th, td{
+	color: #302e29;
+}
+
+.borrar {
+	background-color: #ffA500;
+	border-radius: 50%;
+	padding: 5px 10 px;
+	text-decoration: none;
+	color: #e1e1e1;
+	font-weight: 800;
 }

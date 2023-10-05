@@ -33,10 +33,23 @@
 			<li><a href="#contact" class="boton">Entrar</a></li>
 		</ul>
 
-		<div class="h-icons">
-			<a href="#"><i class='bx bx-search'></i></a>
-			<a href="#"><i class='bx bx-cart'></i></a>
-			<div class="bx bx-menu" id="menu-icon"></div>
+		<div class="icono">
+			<a href="#"><i class='bx bx-cart' id="carrito"></i></a>
+			<div id="listacarrito">
+			<table id="pedidocarrito">
+				<thead>
+					<tr>
+						<th>Imagen</th>
+						<th>Nombre</th>
+						<th>Precio</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+			<a href="#" id="vaciar-carrito" class="btn boton">Eliminar</a>		
+			</div>
+		<div class="bx bx-menu" id="menu-icon"></div>
 		</div>
 	</header>
 
@@ -125,7 +138,7 @@
 			<p>Selecciona a tu gusto<br> los mas exquisitos platillos</p>
 		</div>
 
-		<div class="menu-content">
+		<div class="menu-content"  >
 			<div class="row">
 				<img src="https://static.phdvasia.com/br/menu/combo/desktop_thumbnail_31c0c8fc-9210-4be3-9cb5-1a397b710ba2.png"
 					alt="main-product1">
@@ -145,6 +158,7 @@
 					<a href="#"><i class='bx bxs-star'></i></a>
 					<a href="#"><i class='bx bxs-star'></i></a>
 					<a href="#"><i class='bx bxs-star'></i></a>
+					<a href="#" class="btn  venta" data-id="1">Agregar al Carrito</a>
 				</div>
 			</div>
 
@@ -166,6 +180,7 @@
 					<a href="#"><i class='bx bxs-star'></i></a>
 					<a href="#"><i class='bx bxs-star'></i></a>
 					<a href="#"><i class='bx bxs-star'></i></a>
+					<a href="#" class="btn venta " data-id="2">Agregar al Carrito</a>
 				</div>
 			</div>
 
@@ -187,6 +202,7 @@
 					<a href="#"><i class='bx bxs-star'></i></a>
 					<a href="#"><i class='bx bxs-star'></i></a>
 					<a href="#"><i class='bx bxs-star'></i></a>
+					<a href="#" class="btn  venta" data-id="3">Agregar al Carrito</a>
 				</div>
 			</div>
 
@@ -208,6 +224,7 @@
 					<a href="#"><i class='bx bxs-star'></i></a>
 					<a href="#"><i class='bx bxs-star'></i></a>
 					<a href="#"><i class='bx bxs-star'></i></a>
+					<a href="#" class="btn boton venta" data-id="4">Agregar al Carrito</a>
 				</div>
 			</div>
 		</div>
@@ -245,7 +262,8 @@
 						<a href="#"><i class='bx bxs-star'></i></a>
 						<a href="#"><i class='bx bxs-star'></i></a>
 						<a href="#"><i class='bx bxs-star'></i></a>
-					</div>
+						<a href="#" class="btn boton venta" data-id="5">Agregar al Carrito</a>
+					</div>	
 				</div>
 			</div>
 			<div class="platillo" data-platillo="pizza">
@@ -266,6 +284,7 @@
 						<a href="#"><i class='bx bxs-star'></i></a>
 						<a href="#"><i class='bx bxs-star'></i></a>
 						<a href="#"><i class='bx bxs-star'></i></a>
+						<a href="#" class="btn boton venta" data-id="6">Agregar al Carrito</a>
 					</div>
 				</div>
 			</div>
@@ -287,6 +306,7 @@
 						<a href="#"><i class='bx bxs-star'></i></a>
 						<a href="#"><i class='bx bxs-star'></i></a>
 						<a href="#"><i class='bx bxs-star'></i></a>
+						<a href="#" class="btn boton venta" data-id="7">Agregar al Carrito</a>
 					</div>
 				</div>
 			</div>
@@ -309,6 +329,7 @@
 						<a href="#"><i class='bx bxs-star'></i></a>
 						<a href="#"><i class='bx bxs-star'></i></a>
 						<a href="#"><i class='bx bxs-star'></i></a>
+						<a href="#" class="btn boton venta" data-id="8">Agregar al Carrito</a>
 					</div>
 				</div>
 			</div>
@@ -330,6 +351,7 @@
 						<a href="#"><i class='bx bxs-star'></i></a>
 						<a href="#"><i class='bx bxs-star'></i></a>
 						<a href="#"><i class='bx bxs-star'></i></a>
+						<a href="#" class="btn boton venta" data-id="9">Agregar al Carrito</a>
 					</div>
 				</div>
 			</div>
@@ -351,6 +373,7 @@
 						<a href="#"><i class='bx bxs-star'></i></a>
 						<a href="#"><i class='bx bxs-star'></i></a>
 						<a href="#"><i class='bx bxs-star'></i></a>
+						<a href="#" class="btn boton venta" data-id="10">Agregar al Carrito</a>
 					</div>
 				</div>
 			</div>
@@ -372,6 +395,7 @@
 						<a href="#"><i class='bx bxs-star'></i></a>
 						<a href="#"><i class='bx bxs-star'></i></a>
 						<a href="#"><i class='bx bxs-star'></i></a>
+						<a href="#" class="btn boton venta" data-id="11">Agregar al Carrito</a>
 					</div>
 				</div>
 			</div>
@@ -393,6 +417,7 @@
 						<a href="#"><i class='bx bxs-star'></i></a>
 						<a href="#"><i class='bx bxs-star'></i></a>
 						<a href="#"><i class='bx bxs-star'></i></a>
+						<a href="#" class="btn boton venta" data-id="12">Agregar al Carrito</a>
 					</div>
 				</div>
 			</div>
@@ -414,6 +439,7 @@
 						<a href="#"><i class='bx bxs-star'></i></a>
 						<a href="#"><i class='bx bxs-star'></i></a>
 						<a href="#"><i class='bx bxs-star'></i></a>
+						<a href="#" class="btn boton venta" data-id="13">Agregar al Carrito</a>
 					</div>
 				</div>
 			</div>
@@ -435,6 +461,7 @@
 						<a href="#"><i class='bx bxs-star'></i></a>
 						<a href="#"><i class='bx bxs-star'></i></a>
 						<a href="#"><i class='bx bxs-star'></i></a>
+						<a href="#" class="btn boton venta" data-id="14">Agregar al Carrito</a>
 					</div>
 				</div>
 			</div>
@@ -456,6 +483,7 @@
 						<a href="#"><i class='bx bxs-star'></i></a>
 						<a href="#"><i class='bx bxs-star'></i></a>
 						<a href="#"><i class='bx bxs-star'></i></a>
+						<a href="#" class="btn boton venta" data-id="15">Agregar al Carrito</a>
 					</div>
 				</div>
 			</div>
@@ -477,6 +505,7 @@
 						<a href="#"><i class='bx bxs-star'></i></a>
 						<a href="#"><i class='bx bxs-star'></i></a>
 						<a href="#"><i class='bx bxs-star'></i></a>
+						<a href="#" class="btn boton venta" data-id="16">Agregar al Carrito</a>	
 					</div>
 				</div>
 			</div>
