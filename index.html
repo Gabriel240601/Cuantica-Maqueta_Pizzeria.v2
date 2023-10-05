@@ -219,14 +219,14 @@
 	<section class="menu" id="menu">
 		<h2 class="texto-platillos">Platillos populares</h2>
 		<br>
-		<div class="botones-platillos" >
+		<div class="botones-platillos">
 			<button class="todos btn btn-verde" data-category="todos">Todos</button>
 			<button class="chorimeat btn btn-verde" data-category="chorimeat">ChoriMeat</button>
 			<button class="pasta btn btn-verde" data-category="bebidas">Bebidas</button>
 			<button class="pizza btn btn-verde" data-category="pizza">Pizzas</button>
 			<button class="postres btn btn-verde" data-category="postre">Postres</button>
 		</div>
-		<div class="menu-content" >
+		<div class="menu-content">
 			<div class="platillo" data-platillo="pizza">
 				<div class="row">
 					<img src="img/pizza1.jpg" alt="main-product4">
@@ -519,6 +519,29 @@
 				<li><a href="#menu">Facebook</a></li>
 				<li><a href="#menu">Instagram</a></li>
 			</div>
+			<div class="row">
+				<h4>Ubícanos!</h4>
+				<div id="map">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15524.005577327072!2d-76.16915809250509!3d-13.412240619409177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110e2ecf9b6a14d%3A0x8ae420c8dcf6b784!2sPizza%20Hut%20Express*21!5e0!3m2!1ses-419!2spe!4v1696461847116!5m2!1ses-419!2spe"
+						width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+
+		</div>
+		<div class="contact-form">
+		
+			<div class="row">
+				<form action="procesar_formulario.php" method="POST">
+					<input type="text" id="nombre" name="nombre" placeholder="Nombres" required>
+					<input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+					<input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+					<input type="tel" id="celular" name="celular" placeholder="Número de Celular" required>
+					<textarea id="mensaje" name="mensaje" rows="4" placeholder="Mensaje" required></textarea>
+					<input type="submit" value="Enviar">
+				</form>
+			</div>
 		</div>
 	</section>
 
@@ -538,6 +561,7 @@
 	<!-- custom js link -->
 
 	<script type="text/javascript" src="logica.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap" async defer></script>
 
 </body>
 

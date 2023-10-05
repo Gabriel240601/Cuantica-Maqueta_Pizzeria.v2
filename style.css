@@ -547,3 +547,56 @@ header.sticky {
 		margin-top: 150px;
 	}
 }
+/*FORMULARIO*/
+/* Estilos para el formulario de contacto */
+.contact-form {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #f9f9f9;
+}
+
+.contact-form h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form input[type="submit"] {
+    background-color: white;
+    color: red;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: 1px solid red; /* Borde rojo delgado */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: red;
+	color:white;
+}
